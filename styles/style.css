@@ -6,12 +6,13 @@
     font-family: "Lato", sans-serif;
     font-family: "Work Sans", sans-serif;
 }
-body{
+
+body {
     margin: 0;
     padding: 0;
 }
 
-.btn-primary{
+.btn-primary {
     border-radius: 8px;
     background-color: #ff900e;
     padding: 21px 25px;
@@ -75,27 +76,45 @@ nav li a {
     color: #727272;
 }
 
-.banner img{
+.banner img {
     margin-top: 35px;
     width: 100%;
 }
 
+/* features style */
+
+main {
+    max-width: 1140px;
+    margin: 80px auto;
+}
+
+.features-container {
+    display: flex;
+    align-items: center;
+}
+
+.features-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px;
+}
+
 /* responsive media quary */
 @media screen and (max-width: 576px) {
-    header{
+    header {
         padding: 20px;
     }
 
-    nav{
+    nav {
         flex-direction: column;
     }
 
-    nav li{
+    nav li {
         font-size: .9rem;
         text-align: center;
     }
 
-    .btn-primary{
+    .btn-primary {
         background-color: #ff900e;
         padding: 10px 110px;
         color: #ffffff;
@@ -103,15 +122,16 @@ nav li a {
     }
 }
 
-@media screen and (min-width: 576px) and (max-width: 960px){
-    header{
-        padding: 45px;
+@media screen and (min-width: 576px) and (max-width: 960px) {
+    header {
+        padding: px;
     }
 
-    nav{
+    nav {
         flex-direction: column;
     }
-    .btn-primary{
+
+    .btn-primary {
         background-color: #ff900e;
         padding: 20px 50px;
         color: #ffffff;
