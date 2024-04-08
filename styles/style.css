@@ -15,7 +15,7 @@ body {
 .btn-primary {
     border-radius: 8px;
     background-color: #ff900e;
-    padding: 21px 25px;
+    padding: 18px 25px;
     color: #ffffff;
     font-size: 1.25rem;
     border: 0;
@@ -67,6 +67,8 @@ nav li a {
     line-height: 4.25rem;
     font-weight: bold;
     color: #131313;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .banner-description {
@@ -81,12 +83,14 @@ nav li a {
     width: 100%;
 }
 
-/* features style */
-
+/* main style */
 main {
-    max-width: 1140px;
-    margin: 80px auto;
+    max-width: 1180px;
+    margin: 60px auto;
 }
+/* ------------ */
+
+/* features style */
 
 .features-container {
     display: flex;
@@ -96,13 +100,31 @@ main {
 .features-images {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 24px;
+    grid-gap: 15px;
+}
+
+.features-content{
+    padding-left: 30px;
+}
+
+.feature-title{
+    font-size: 2.8rem;
+    margin: 0px;
+}
+
+.feature-description{
+    font-size: 1rem;
+    color: #727272;
 }
 
 /* responsive media quary */
 @media screen and (max-width: 576px) {
     header {
         padding: 20px;
+    }
+
+    main{
+        margin: 30px auto;
     }
 
     nav {
@@ -120,11 +142,28 @@ main {
         color: #ffffff;
         font-size: 1rem;
     }
+
+    .features-container{
+        flex-direction: column-reverse;
+    }
+
+    .features-images{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .features-content{
+        padding: 0px 10px;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
 }
 
 @media screen and (min-width: 576px) and (max-width: 960px) {
     header {
-        padding: px;
+        padding: 20px;
+    }
+
+    main{
+        margin: 30px auto;
     }
 
     nav {
@@ -136,5 +175,18 @@ main {
         padding: 20px 50px;
         color: #ffffff;
         font-size: 1.15rem;
+    }
+
+    .features-container{
+        flex-direction: column-reverse;
+    }
+
+    .features-images{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .features-content{
+        padding: 0px 60px;
+        text-align: center;
+        margin-bottom: 2rem;
     }
 }
